@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+  <!----shift+1 already does the heading automatically---->
+  <head>
+    <!----Heading for site---->
+    <title>Renata | A loving girlfriend</title>
+    <meta
+      name="description"
+      content="Renata is a chemical engineer that is really smart and intelligent"
+    />
+    <meta charset="utf-8" />
+    <!----crawlers for help site visualization---->
+    <meta name="robots" content="index,follow" />
+    <!----Icon on heade---->
+    <link rel="icon" href="/img/television_tv_screen_monitor_icon_190854.ico" />
+    <!----Automate scale for mobile webpage---->
+    <meta name="viewport" content="width = device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!--header indicates the header, similar to div-->
+    <header>
+      <h1>Renata</h1>
+      <p>Hello there, this is a <strong>Renata</strong> website</p>
+      <p>Her favorite topics are:</p>
+
+      <!----List---->
+      <!--nav elements that link to other pages-->
+      <nav>
+        <ol>
+          <li>Topics</li>
+          <ol>
+            <li>
+              <!--Anchor tag, to give link, target blank opens a new window-->
+              Industry 4.0<a
+                target="blank"
+                href="https://www.youtube.com/watch?v=QWWQr6TmWGQ"
+              >
+                <img src="/img/iconmonstr-building-26.svg" />
+              </a>
+            </li>
+            <li>Cats</li>
+          </ol>
+        </ol>
+      </nav>
+    </header>
+
+    <!--main englobes the main part of website (exclude footer and header)-->
+    <main>
+      <!----Forms---->
+      <form action="/contact.html">
+        <label for="user">Username</label>
+        <input
+          autocomplete="off"
+          maxlength="60"
+          minlength="6"
+          name="user"
+          type="text"
+          id="user"
+          placeholder="Renata fan base"
+          required
+        />
+        <label>Email</label>
+        <input name="email" type="email" required />
+        <input type="radio" name="products" value="macbook" />
+        <input type="radio" name="products" value="iphone" />
+        <input type="radio" name="products" value="amazon" />
+        <input type="radio" name="products" value="Huawei" />
+        <select name="products" id="product">
+          <option value=""></option>
+          <option value="Mac 2019">Macbook</option>
+          <option value="Iphone 11">Iphone</option>
+        </select>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <!--section of images and videos-->
+      <!----Image and video---->
+      <section>
+        <figure>
+          <img
+            width="1000"
+            height="800"
+            src="/img/pexels-pixabay-163036.jpg"
+            alt="Not loaded"
+          />
+          <figcaption>Mario</figcaption>
+        </figure>
+        <video controls width="1000" height="800">
+          <source
+            src="/videos/WhatsApp Video 2021-07-07 at 16.33.34.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+      <!----Table---->
+      <table>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>age</th>
+        </tr>
+        <tr>
+          <th>Tom</th>
+          <th>Old</th>
+          <th>52</th>
+        </tr>
+      </table>
+      <!--Div -> wrapper or organizer-->
+      <div class="Industry-4.0">
+        <!----Classes and Id - Very important -> id can't have the same name, 
+      whereas class can be repeated to identify a class of elements (Space separate classes)---->
+        <!--Article -> similar to section but is kind of unique while you can have many distinct sections-->
+        <article>
+          <h1 id="Industry">Industry 4.0</h1>
+          <h2>Article Title</h2>
+          <p class="article-text">Lorem ipsum dolor sit amet.</p>
+          <p class="article-text">Lorem ipsum dolor sit amet dd.</p>
+          <p class="article-text">Lorem ipsum dolor sit ametc dddc.</p>
+          <p>Lorem ipsum dolor sit ametc dddc.</p>
+        </article>
+      </div>
+    </main>
+
+    <!--Aside -> acts like a sideboard-->
+    <!--footer class of footer-->
+    <footer>
+      <p>created in 2021</p>
+    </footer>
+  </body>
+</html>
