@@ -1,0 +1,101 @@
+/*Ids have bigger Selector specifity, so they ahve high priority. If the have same Selector specifity css and same name applies the last (h1, h1 <-)*/
+/*Id> Class> (p,h1,h2,h3...)*/
+/*General selectors*/
+p {
+  color: darkmagenta;
+}
+
+.first-title {
+  color: fuchsia;
+}
+
+#youtube-link {
+  color: rgb(255, 0, 221);
+}
+
+/*Select inside class*/
+.random h1 {
+  color: darkslategrey;
+}
+
+/*Select everything*/
+* {
+  text-align: center;
+}
+
+/*Select a part plus another*/
+.random + ul {
+  list-style-type: none;
+}
+
+/*Select a part that belongs to something -> in this case li that belongs to ul*/
+ul > li {
+  color: aquamarine;
+}
+
+/*Especific part of class*/
+.links li:nth-child(1) {
+  color: red;
+}
+
+/*Important -> give the highest priority to the code*/
+ul > li {
+  color: rgba(160, 22, 22, 0.822) !important;
+}
+
+/*Paddings and Margins*/
+h1 {
+  background-color: cornflowerblue;
+  margin: 50px;
+}
+button {
+  margin: 100px;
+  padding: 50px 20px 10px 5px; /*Same as padding top,right,bottom, left (in that order)*/
+}
+
+/*Box Model -> depending on the browser there is a box model that can hinder your formating*/
+
+div {
+  background-color: cadetblue;
+  color: black;
+  width: 300px;
+  padding: 20px; /*Paddings in a box model can cause issues with formating, it is better to initiate the page without margins and padding*/
+  border: 3px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*All the padding and margin created are within the box, good option to format*/
+}
+
+/*Sizes of pixels...*/
+
+.textsize {
+  font-size: 1rem; /*Pixels are a bit tricky cause they are fixed and difficult to change, mobile and desktop pages difference*/
+  /*1em are 16 pixels by default, but if you change the html font size pixels 1em will scale accordingly*/
+  /*em looks at the parent element in order to scale, so if you nest em's it will scale every time it is nested
+  parent = 16px :children(16*1.5px -> 1.5em, children of children(16*1,5^2 px -> 1.5em) )*/
+  /*In order not to inherit from parent's, it is posible to use rem that inherits only from the root parent*/
+}
+
+/*Button Styling -> how to create the most ugly button ever*/
+
+#stylingbuttom {
+  margin: 20rem;
+  padding: 2rem 4rem;
+  background: none;
+  border: 0.3rem solid rgb(21, 21, 226);
+  color: rgb(248, 48, 221);
+  font-size: 2.4rem;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  background: darkgrey;
+}
+
+/*Block, Inline->inlines doesn't change with height, width and margin just change the left and right margin between inlines elements*/
+a {
+  display: block; /*change inline to block*/
+  background: lavenderblush;
+}
