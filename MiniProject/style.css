@@ -1,0 +1,99 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*All the padding and margin created are within the box, good option to format*/
+}
+
+header {
+  font-size: 2rem;
+  background: rgba(195, 28, 84, 0.712);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+nav h1 {
+  float: left;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 2rem;
+  float: right;
+}
+
+.main h1 {
+  font-size: 15rem;
+
+  color: rgba(18, 149, 236, 0.342);
+}
+
+.main {
+  background-image: url("/MiniProject/images/pexels-hiếu-hoàng-1179863.jpg");
+  background-position: center;
+  height: 100rem;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  text-shadow: 10px 3px 3px black;
+  text-align: center;
+  padding-top: 80rem;
+}
+
+.main button {
+  margin: -1rem;
+  padding: 0.5rem 10rem;
+  background: rgba(8, 46, 107, 0.308);
+  color: rgba(213, 243, 248, 0.452);
+  border-width: 1px;
+  border-color: black;
+  cursor: pointer;
+}
+.contact h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact {
+  font-size: 1.5rem;
+  background-color: rgba(213, 243, 248, 0.452);
+  text-align: center;
+}
+
+form input,
+form label,
+form textarea {
+  display: block;
+}
+
+form input,
+form textarea {
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 20%;
+}
+
+form button {
+  margin-bottom: 2rem;
+  padding: 0.5rem 10rem;
+  background: rgba(8, 46, 107, 0.308);
+  color: rgb(0, 1, 2);
+  border-width: 1px;
+  border-color: black;
+  cursor: pointer;
+}

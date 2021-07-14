@@ -33,7 +33,7 @@ ul > li {
   color: aquamarine;
 }
 
-/*Especific part of class*/
+/*Specific part of class*/
 .links li:nth-child(1) {
   color: red;
 }
@@ -98,4 +98,75 @@ div {
 a {
   display: block; /*change inline to block*/
   background: lavenderblush;
+}
+
+/*Position */
+html,
+body {
+  height: 100%;
+}
+.container {
+  background: rgb(21, 21, 226);
+  width: 50%;
+  height: 200%;
+  margin: auto;
+  position: relative; /*Creates a relative position, so the box1 position will be relative to this and not the webpage*/
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 20%;
+  height: 20%;
+  background: aqua;
+}
+
+.box1 {
+  position: absolute; /*absolute, it is like the box is taken out of document -> acces to 4 new functions: top, left, bottom, right*/
+  bottom: 50%;
+  left: 50%;
+  background: chocolate;
+  transform: translate(-50%, 100%);
+}
+
+.box2 {
+  position: relative; /*In this case relative moves relatively to the first position of the box*/
+  left: 1rem;
+  background: violet;
+}
+
+.box3 {
+  background: black;
+  position: fixed; /*Fix the box, useful for navigation bars*/
+  top: 0rem;
+  left: 0;
+}
+
+.box4 {
+  position: sticky; /*when you scroll down it stick*/
+  top: 0rem;
+}
+
+/*Pseudoclasses*/
+
+button:nth-of-type(1) {
+  padding: 2rem 4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkcyan;
+  padding: 2rem 4rem;
+}
+button:focus {
+  background: palevioletred;
+}
+
+/*Pseudoelements*/
+h1:nth-of-type(1)::before {
+  content: "***";
+}
+
+h1:nth-of-type(1)::after {
+  content: "***";
 }
